@@ -6,7 +6,7 @@ variable "github_token" {
 # repo
 variable "repo" {
   description = "repo"
-  default     = "example"
+  default     = "example-ops2"
 }
 
 # Configure the GitHub Provider
@@ -17,4 +17,4 @@ provider "github" {
 
 resource "github_repository" "example" {
   name        = "${var.repo}"
-  description = "My awesome codebase"
+  description = "My awesome codebase2"
